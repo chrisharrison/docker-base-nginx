@@ -44,6 +44,9 @@ RUN chmod +x /etc/service/nginx/run
 # git
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y git
 
+# tools
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y nano
+
 # apt-get clean
 RUN apt-get clean
 RUN apt-get autoclean
